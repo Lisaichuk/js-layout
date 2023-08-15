@@ -1,0 +1,47 @@
+@use '../../style' as s;
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(4);
+}
+
+.tabs {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	&__button {
+		padding-bottom: s.space(2);
+		border-bottom: 1px solid #eee;
+		color: rgb(134, 134, 134);
+		  
+		&--active {
+			color: #121212;
+			border-bottom: 1px solid #121212;
+		}
+	}
+}
+
+.community {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(4);
+
+	&__title {
+		font-size: 18px;
+	}
+
+	&__info {
+		font-size: 14px;
+		color: rgba(54, 54, 54, 1);
+		line-height: 21px;
+	}
+
+	&__button {
+		padding: s.space(3);
+		font-size: 14px;
+		color: white;
+		background-color: rgba(244, 111, 23, 1);
+		border-radius: 10px;
+	}
+}
